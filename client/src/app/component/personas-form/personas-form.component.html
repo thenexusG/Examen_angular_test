@@ -1,0 +1,31 @@
+<div class="col-md-4 offset-md-4">
+    <div class="card">
+        <div class="card-body">
+            <form>
+                <div class="form-group mt-1">
+                    <input type="text" [ngModel]="personas.Nombre" name="nombre" placeholder="Nombre"
+                        class="form-control" autofocus>
+                </div>
+                <div class="form-group mt-1">
+                    <input type="text" [ngModel]="personas.ApellidoP" name="apellidoP" placeholder="Apellido Paterno"
+                        class="form-control">
+                </div>
+                <div class="form-group mt-1">
+                    <input type="text" [ngModel]="personas.ApellidoM" name="apellidoM" placeholder="Apellido Materno"
+                        class="form-control">
+                </div>
+                <div class="form-group mt-1">
+                    <textarea name="direccion" [ngModel]="personas.Direccion" placeholder="Direccion" rows="2"
+                        class="form-control"></textarea>
+                </div>
+                <div class="form-group mt-1">
+                    <input type="text" [ngModel]="personas.Telefono" name="telefono" placeholder="Telefono"
+                        class="form-control">
+                </div>
+                <button type="button" class="btn btn-success btn-block mt-1" (click)="edit ? updatePersona() : savePersona()" >
+                    Save
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
